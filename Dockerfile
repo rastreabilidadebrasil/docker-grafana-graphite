@@ -23,7 +23,7 @@ RUN \
 RUN \
     apt-get install -y elasticsearch && \
     apt-get clean && \
-    sed -i '/#cluster.name:.*/a cluster.name: logstash' /etc/elasticsearch/elasticsearch.yml && \
+    sed -i '/#cluster.name:.*/a cluster.name: grafana' /etc/elasticsearch/elasticsearch.yml && \
     sed -i '/#path.data: \/path\/to\/data/a path.data: /data' /etc/elasticsearch/elasticsearch.yml
 
 
