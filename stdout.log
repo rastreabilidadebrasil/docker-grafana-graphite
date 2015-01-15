@@ -1,0 +1,35 @@
+{:timestamp=>"2015-01-14T19:04:37.951000+0000", :message=>"Using milestone 2 input plugin 'tcp'. This plugin should be stable, but if you see strange behavior, please let us know! For more information on plugin milestones, see http://logstash.net/docs/1.4.2-modified/plugin-milestones", :level=>:warn}
+{:timestamp=>"2015-01-14T19:04:38.060000+0000", :message=>"Using milestone 1 filter plugin 'syslog_pri'. This plugin should work, but would benefit from use by folks like you. Please let us know if you find bugs or have suggestions on how to improve this plugin.  For more information on plugin milestones, see http://logstash.net/docs/1.4.2-modified/plugin-milestones", :level=>:warn}
+log4j, [2015-01-14T19:05:15.864]  WARN: org.elasticsearch.discovery: [logstash-8918b51d9eb4-16-2016] waited for 30s and no initial state was set by the discovery
+Exception in thread ">output" org.elasticsearch.discovery.MasterNotDiscoveredException: waited for [30s]
+	at org.elasticsearch.action.support.master.TransportMasterNodeOperationAction$3.onTimeout(org/elasticsearch/action/support/master/TransportMasterNodeOperationAction.java:180)
+	at org.elasticsearch.cluster.service.InternalClusterService$NotifyTimeout.run(org/elasticsearch/cluster/service/InternalClusterService.java:492)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(java/util/concurrent/ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java/util/concurrent/ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(java/lang/Thread.java:745)
+{:timestamp=>"2015-01-14T19:11:56.844000+0000", :message=>"Using milestone 2 input plugin 'tcp'. This plugin should be stable, but if you see strange behavior, please let us know! For more information on plugin milestones, see http://logstash.net/docs/1.4.2-modified/plugin-milestones", :level=>:warn}
+{:timestamp=>"2015-01-14T19:11:56.921000+0000", :message=>"Using milestone 1 filter plugin 'syslog_pri'. This plugin should work, but would benefit from use by folks like you. Please let us know if you find bugs or have suggestions on how to improve this plugin.  For more information on plugin milestones, see http://logstash.net/docs/1.4.2-modified/plugin-milestones", :level=>:warn}
+{:timestamp=>"2015-01-14T19:12:46.730000+0000", :message=>"Using milestone 2 input plugin 'tcp'. This plugin should be stable, but if you see strange behavior, please let us know! For more information on plugin milestones, see http://logstash.net/docs/1.4.2-modified/plugin-milestones", :level=>:warn}
+{:timestamp=>"2015-01-14T19:12:46.888000+0000", :message=>"Using milestone 1 filter plugin 'syslog_pri'. This plugin should work, but would benefit from use by folks like you. Please let us know if you find bugs or have suggestions on how to improve this plugin.  For more information on plugin milestones, see http://logstash.net/docs/1.4.2-modified/plugin-milestones", :level=>:warn}
+log4j, [2015-01-14T19:13:25.099]  WARN: org.elasticsearch.discovery: [logstash-f76bbf1dd1a8-11-2016] waited for 30s and no initial state was set by the discovery
+Exception in thread ">output" org.elasticsearch.discovery.MasterNotDiscoveredException: waited for [30s]
+	at org.elasticsearch.action.support.master.TransportMasterNodeOperationAction$3.onTimeout(org/elasticsearch/action/support/master/TransportMasterNodeOperationAction.java:180)
+	at org.elasticsearch.cluster.service.InternalClusterService$NotifyTimeout.run(org/elasticsearch/cluster/service/InternalClusterService.java:492)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(java/util/concurrent/ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java/util/concurrent/ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(java/lang/Thread.java:745)
+{:timestamp=>"2015-01-14T19:36:09.999000+0000", :message=>"Using milestone 2 input plugin 'tcp'. This plugin should be stable, but if you see strange behavior, please let us know! For more information on plugin milestones, see http://logstash.net/docs/1.4.2-modified/plugin-milestones", :level=>:warn}
+{:timestamp=>"2015-01-14T19:36:10.086000+0000", :message=>"Using milestone 1 filter plugin 'syslog_pri'. This plugin should work, but would benefit from use by folks like you. Please let us know if you find bugs or have suggestions on how to improve this plugin.  For more information on plugin milestones, see http://logstash.net/docs/1.4.2-modified/plugin-milestones", :level=>:warn}
+{
+          "@timestamp" => "2015-01-14T19:42:15.262+00:00",
+            "@version" => 1,
+             "message" => "MongoError['No primary node is available!']",
+         "logger_name" => "UNCHECKED_EXCEPTION",
+         "thread_name" => "ForkJoinPool-4-worker-15",
+               "level" => "ERROR",
+         "level_value" => 40000,
+         "stack_trace" => "reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$: MongoError['No primary node is available!']\n\tat reactivemongo.core.actors.Exceptions$PrimaryUnavailableException$.<clinit>(actors.scala) ~[reactivemongo_2.10-0.10.0.jar:0.10.0]\n\tat reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:508) ~[reactivemongo_2.10-0.10.0.jar:0.10.0]\n\tat reactivemongo.core.actors.MongoDBSystem$$anonfun$pickChannel$4.apply(actors.scala:508) ~[reactivemongo_2.10-0.10.0.jar:0.10.0]\n\tat scala.Option.getOrElse(Option.scala:120) ~[scala-library-2.10.4.jar:na]\n\tat reactivemongo.core.actors.MongoDBSystem.pickChannel(actors.scala:508) ~[reactivemongo_2.10-0.10.0.jar:0.10.0]\n\tat reactivemongo.core.actors.MongoDBSystem$$anonfun$receive$1.applyOrElse(actors.scala:252) ~[reactivemongo_2.10-0.10.0.jar:0.10.0]\n\tat akka.actor.ActorCell.receiveMessage(ActorCell.scala:498) ~[akka-actor_2.10-2.2.4.jar:2.2.4]\n\tat akka.actor.ActorCell.invoke(ActorCell.scala:456) ~[akka-actor_2.10-2.2.4.jar:2.2.4]\n\tat akka.dispatch.Mailbox.processMailbox(Mailbox.scala:237) ~[akka-actor_2.10-2.2.4.jar:2.2.4]\n\tat akka.dispatch.Mailbox.run(Mailbox.scala:219) ~[akka-actor_2.10-2.2.4.jar:2.2.4]\n\tat akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:385) ~[akka-actor_2.10-2.2.4.jar:2.2.4]\n\tat scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.4.jar:na]\n\tat scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.4.jar:na]\n\tat scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.4.jar:na]\n\tat scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.4.jar:na]\n",
+            "HOSTNAME" => "new-host-5.home",
+    "application.home" => "/Users/marcusdb/Documents/Env/workspace/user-rb",
+                "host" => "192.168.59.3:60382"
+}
